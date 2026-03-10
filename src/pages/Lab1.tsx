@@ -22,7 +22,7 @@ function UserPage() {
       email: values.email,
       role: "User"
     };
-    setData([...data, newUser]); // thêm user vào bảng
+    setData([...data, newUser]); 
     setOpen(false);
   };
   return (
