@@ -27,7 +27,7 @@ function UserPage() {
   };
   return (
     <div>
-      <h2>Register Form</h2>
+      <h2>Dang ky tai khoan</h2>
       <Form onFinish={onFinish} style={{ maxWidth: 400 }}>
         <Form.Item label="Name" name="name">
           <Input />
