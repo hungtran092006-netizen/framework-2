@@ -1,4 +1,4 @@
-import { Table } from "antd";
+import { Table ,Image} from "antd";
 
 const columns = [
   {
@@ -17,14 +17,19 @@ const columns = [
     title: "Major",
     dataIndex: "major",
   },
+    {
+      title: "Avatar",
+      dataIndex: "avatar",
+      render: (avatar: string) => <Image width={50} src={avatar} />,
+    },
 ];
 
 const data = [
-  {key: 1,id: 1,name: "Nam", age: 20,major: "IT",},
-  {key: 2,id: 2,name: "Linh",age: 21,major: "Business",},
-  {key: 3, id: 3, name: "Hà", age: 19,major: "Design",},
-  {key: 4,id: 4,name: "Hung",age: 19,major: "Design",},
-  {key: 5,id: 5,name: "Hungg",age: 19,major: "Design",},
+  {key: 1,id: 1,name: "Nam", age: 20,major: "IT",avatar: "https://i.pravatar.cc/150?img=1",},
+  {key: 2,id: 2,name: "Linh",age: 21,major: "Business",avatar: "https://i.pravatar.cc/150?img=2",},
+  {key: 3,id: 3,name: "Hà", age: 19,major: "Design",avatar: "https://i.pravatar.cc/150?img=3",},
+  {key: 4,id: 4,name: "Hung",age: 19,major: "Design",avatar: "https://i.pravatar.cc/150?img=4",},
+  {key: 5,id: 5,name: "Hungg",age: 19,major: "Design",avatar: "https://i.pravatar.cc/150?img=5",},
 ];
 export default function StudentTable() {
   return (
