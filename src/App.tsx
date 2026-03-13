@@ -2,9 +2,11 @@ import { Toaster } from "react-hot-toast";
 import { Link, Routes, Route } from "react-router-dom";
 import UserPage from "./pages/Lab1";  
 import StudentTable from "./pages/Lab2";
-
+import LoginForm from "./pages/lab3";
 import User from "./pages/lab2.3";
 import UserTable from "./pages/lab2.2";
+import SigninForm from "./pages/lab3.1";
+import AddForm from "./pages/lab3.2";
 function App() {
   return (
     <>
@@ -30,6 +32,16 @@ function App() {
             <Link to="/edit" className="hover:text-gray-200">
               lab2.2
             </Link>
+            <Link to="/lab3" className="hover:text-gray-200">
+              lab3
+            </Link>
+              <Link to="/lab3.1" className="hover:text-gray-200">
+                lab3.1
+              </Link>
+               <Link to="/lab3.2" className="hover:text-gray-200">
+                lab3.2
+              </Link>
+
           </div>
 
           <div className="hidden md:flex items-center space-x-6">
@@ -53,6 +65,9 @@ function App() {
           <Route path="/add" element={<StudentTable />} />
            <Route path="/edit" element={<User />} />
             <Route path="/abc" element={<UserTable />} />
+            <Route path="/lab3" element={<LoginForm />} />
+            <Route path="/lab3.1" element={<SigninForm />} />
+            <Route path="/lab3.2" element={<AddForm />} />
         </Routes>
       </div>
 
