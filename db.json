@@ -1,4 +1,56 @@
 {
-  "products": [],
+  "stories": [
+    {
+      "title": "a",
+      "description": "a",
+      "active": true,
+      "categoryId": 1,
+      "id": 3
+    },
+    {
+      "title": "a",
+      "active": true,
+      "description": "a",
+      "categoryId": 2,
+      "id": 4
+    },
+    {
+      "title": "1",
+      "description": "1",
+      "active": false,
+      "categoryId": 3,
+      "id": 5
+    },
+    {
+      "title": "A",
+      "description": "A",
+      "active": true,
+      "id": 6
+    }
+  ],
+  "categories": [
+    {
+      "name": "truyen tranh",
+      "id": 1
+    },
+    {
+      "name": "tieu thuyet",
+      "id": 2
+    },
+    {
+      "name": "kinh di",
+      "id": 3
+    },
+    {
+      "name": "a",
+      "mota": "a",
+      "id": 4
+    },
+    {
+      "name": "b",
+      "mota": "b",
+      "id": 5
+    }
+  ],
   "users": []
 }

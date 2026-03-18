@@ -7,6 +7,7 @@ import User from "./pages/lab2.3";
 import UserTable from "./pages/lab2.2";
 import SigninForm from "./pages/lab3.1";
 import AddForm from "./pages/lab3.2";
+import Lab4 from "./pages/lab4";
 function App() {
   return (
     <>
@@ -38,9 +39,12 @@ function App() {
               <Link to="/lab3.1" className="hover:text-gray-200">
                 lab3.1
               </Link>
-               <Link to="/lab3.2" className="hover:text-gray-200">
-                lab3.2
-              </Link>
+                <Link to="/lab3.2" className="hover:text-gray-200">
+                  lab3.2
+                </Link>
+                <Link to="/lab4" className="hover:text-gray-200">
+                  lab4
+                </Link>
 
           </div>
 
@@ -68,6 +72,7 @@ function App() {
             <Route path="/lab3" element={<LoginForm />} />
             <Route path="/lab3.1" element={<SigninForm />} />
             <Route path="/lab3.2" element={<AddForm />} />
+            <Route path="/lab4" element={<Lab4 />} />
         </Routes>
       </div>
 
