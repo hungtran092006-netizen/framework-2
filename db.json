@@ -1,30 +1,55 @@
 {
   "stories": [
     {
-      "title": "a",
-      "description": "a",
-      "active": true,
+      "title": "tran tuan hung",
+      "description": "abcd",
+      "author": "abcdd",
+      "image": "https://cdn-media.sforum.vn/storage/app/media/anh-dep-83.jpg",
       "categoryId": 1,
-      "id": 3
+      "id": 3,
+      "createdAt": "2026-03-18T10:00:00Z"
     },
     {
-      "title": "a",
-      "active": true,
-      "description": "a",
+      "title": "tran tuan hung",
+      "author": "abcdd",
+      "description": "abcd",
       "categoryId": 2,
-      "id": 4
+      "id": 4,
+      "createdAt": "2024-06-02T10:00:00Z"
     },
     {
-      "title": "1",
-      "description": "1",
-      "active": false,
-      "categoryId": 3,
-      "id": 5
+      "title": "tran tuan hung",
+      "author": "abcdd",
+      "description": "abcd",
+      "categoryId": "phieu luu",
+      "id": 5,
+      "createdAt": "2024-06-02T10:00:00Z"
     },
     {
-      "title": "A",
-      "description": "A",
-      "active": true,
+      "title": "b",
+      "description": "c",
+      "author": "c",
+      "image": "https://picsum.photos/400/300?random=1",
+      "categorymota": "b",
+      "createdAt": "2026-03-18T08:14:08.224Z",
+      "id": 6
+    },
+    {
+      "title": "b",
+      "description": "c",
+      "author": "c",
+      "image": "https://picsum.photos/400/300?random=1",
+      "categorymota": "b",
+      "createdAt": "2026-03-18T08:14:08.224Z",
+      "id": 6
+    },
+    {
+      "title": "b",
+      "description": "c",
+      "author": "c",
+      "image": "https://picsum.photos/400/300?random=1",
+      "categorymota": "b",
+      "createdAt": "2026-03-18T08:14:08.224Z",
       "id": 6
     }
   ],

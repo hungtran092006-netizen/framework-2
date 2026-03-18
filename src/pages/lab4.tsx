@@ -9,6 +9,7 @@ type Story = {
   description: string;
   active: boolean;
   categorymota: string;
+  createdAt: string;
 };
 
 type Category = {
@@ -60,7 +61,10 @@ export default function Lab4() {
   });
 
   const onFinish = (values: Story) => {
-    mutation.mutate(values);
+    mutation.mutate({
+      ...values,
+      createdAt: new Date().toISOString(),
+    });
   };
 
   return (
@@ -81,13 +85,23 @@ export default function Lab4() {
         </Form.Item>
 
         
-        <Form.Item
-          label="Active"
-          name="active"
-          valuePropName="checked"
+           <Form.Item
+          label="author"
+          name="author"
+          rules={[{ required: true, message: "Nhập tên tác giả" }]}
         >
-          <Checkbox>Active</Checkbox>
+          <Input />
         </Form.Item>
+
+             <Form.Item
+          label="image"
+          name="image"
+          rules={[{ required: true, message: "Nhập đường dẫn ảnh" }]}
+        >
+          <Input />
+        </Form.Item>
+        
+        
 
        
         <Form.Item label="Category" name="categorymota">
