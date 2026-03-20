@@ -2,6 +2,7 @@ import { Table, Image, Spin, Button, Popconfirm } from "antd";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import axios from "axios";
 import toast from "react-hot-toast";
+import { Link } from "react-router-dom";
 
 type Story = {
     id: number;
@@ -14,7 +15,7 @@ type Story = {
 };
 
 const StoryList = () => {
-    const { data, isLoading, isError, refetch } = useQuery<Story[]>({
+    const { data, isLoading, isError } = useQuery<Story[]>({
         queryKey: ["getAllstories"],
         queryFn: async () => {
             const res = await axios.get("http://localhost:3000/stories");
@@ -66,17 +67,23 @@ const StoryList = () => {
         },
          {
       title: "Action",
-      render: (_: any, record: any) => (
-        <Popconfirm
-          title="xoa truyen"
-          description="xoa truyen khong?"
-          okText="co"
-          cancelText="khong"
-          onConfirm={() => mutate(record.id)}
-        >
-          <Button danger>Delete</Button>
-        </Popconfirm>
-      ),
+     render: (_: any, record: any) => (
+  <>
+    <Popconfirm
+      title="xoa truyen"
+      description="xoa truyen khong?"
+      okText="co"
+      cancelText="khong"
+      onConfirm={() => mutate(record.id)}
+    >
+      <Button danger>Delete</Button>
+    </Popconfirm>
+
+    <Button type="primary" style={{ marginLeft: 8 }}>
+      <Link to={`/lab6/${record.id}`}>Edit</Link>
+    </Button>
+  </>
+),
     },
     ];
 

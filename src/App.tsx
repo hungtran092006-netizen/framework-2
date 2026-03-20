@@ -9,6 +9,7 @@ import SigninForm from "./pages/lab3.1";
 import AddForm from "./pages/lab3.2";
 import Lab4 from "./pages/lab4";
 import StoryList from "./pages/lab5";
+import EditStory from "./pages/lab6";
 function App() {
   return (
     <>
@@ -49,6 +50,7 @@ function App() {
                  <Link to="/lab5" className="hover:text-gray-200">
                   lab5
                 </Link>
+                
 
           </div>
 
@@ -78,6 +80,7 @@ function App() {
             <Route path="/lab3.2" element={<AddForm />} />
             <Route path="/lab4" element={<Lab4 />} />
               <Route path="/lab5" element={<StoryList />} />
+             <Route path="/lab6/:id" element={<EditStory />} />
         </Routes>
       </div>
 
