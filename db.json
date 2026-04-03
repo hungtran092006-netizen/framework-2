@@ -2,56 +2,36 @@
   "stories": [
     {
       "title": "tran tuan hung",
-      "description": "abcd",
       "author": "abcdd",
       "image": "https://cdn-media.sforum.vn/storage/app/media/anh-dep-83.jpg",
+      "description": "abcdex",
       "categoryId": 1,
-      "id": 3,
-      "createdAt": "2026-03-18T10:00:00Z"
+      "createdAt": "2026-03-18T10:00:00Z",
+      "id": 3
     },
     {
       "title": "tran tuan hung",
-      "author": "abcdd",
+      "author": "abcddx",
       "image": "https://cavathanquoc.com/wp-content/uploads/2024/06/Ao-thun-tron-cotton-mau-xanh-duong-4.jpg",
       "description": "abcd",
-      "categoryId": 2,
       "createdAt": "2024-06-02T10:00:00Z",
       "id": 4
     },
     {
-      "title": "tran tuan hung",
-      "author": "abcdd",
-      "description": "abcd",
-      "categoryId": "phieu luu",
-      "id": 5,
-      "createdAt": "2024-06-02T10:00:00Z"
+      "title": "hungchan",
+      "author": "hungchan",
+      "image": "https://picsum.photos/400/300?random=1",
+      "description": "nhu cc",
+      "createdAt": "2024-06-02T10:00:00Z",
+      "id": 5
     },
     {
-      "title": "b",
-      "author": "cdx",
-      "image": "https://picsum.photos/400/300?random=1",
-      "description": "c",
-      "categoryId": "hehe",
-      "createdAt": "2026-03-18T08:14:08.224Z",
-      "id": 6
-    },
-    {
-      "title": "b",
-      "description": "c",
-      "author": "c",
-      "image": "https://picsum.photos/400/300?random=1",
-      "categorymota": "b",
+      "title": "a",
+      "author": "aaaaa",
+      "image": "https://cavathanquoc.com/wp-content/uploads/2024/06/Ao-thun-tron-cotton-mau-xanh-duong-4.jpg",
+      "description": "a",
       "createdAt": "2026-03-18T08:14:08.224Z",
       "id": 7
-    },
-    {
-      "title": "b",
-      "description": "c",
-      "author": "c",
-      "image": "https://picsum.photos/400/300?random=1",
-      "categorymota": "b",
-      "createdAt": "2026-03-18T08:14:08.224Z",
-      "id": 8
     }
   ],
   "categories": [

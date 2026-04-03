@@ -10,6 +10,10 @@ import AddForm from "./pages/lab3.2";
 import Lab4 from "./pages/lab4";
 import StoryList from "./pages/lab5";
 import EditStory from "./pages/lab6";
+import StoryListt from "./hooks/StoryList";
+import AddStory from "./hooks/AddStory";
+import { useDeleteStory } from "./hooks/useDeleteStory"; 
+import EdittStory from "./hooks/EditStory";
 function App() {
   return (
     <>
@@ -50,7 +54,9 @@ function App() {
                  <Link to="/lab5" className="hover:text-gray-200">
                   lab5
                 </Link>
-                
+                <Link to="/StoryList" className="hover:text-gray-200">
+                  Story List
+                </Link>
 
           </div>
 
@@ -81,6 +87,10 @@ function App() {
             <Route path="/lab4" element={<Lab4 />} />
               <Route path="/lab5" element={<StoryList />} />
              <Route path="/lab6/:id" element={<EditStory />} />
+             <Route path="/StoryList" element={<StoryListt  />} />
+             <Route path="/AddStory" element={<AddStory />} />
+             <Route path="/EditStory/:id" element={<EdittStory />} />
+            
         </Routes>
       </div>
 
